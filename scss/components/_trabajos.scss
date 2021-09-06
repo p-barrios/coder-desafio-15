@@ -1,0 +1,27 @@
+/* Trabajos */
+
+#trabajos {
+    text-align: center;
+    margin: 50px;
+
+    .container-video {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .videos {
+        iframe {
+            width: 500px;
+        }
+    }
+
+    h3 {
+        display: inline-block;
+        padding: 10px 40px;
+        margin: 25px 400px;
+        border-bottom: 2px solid blue;
+    }
+}

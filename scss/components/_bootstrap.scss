@@ -1,0 +1,47 @@
+/* Boostrap */
+.img-card {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: map-get($base, b-radius);
+    
+}
+
+.col-lg-3, 
+.col-md-5, 
+.col-sm-12 {
+    padding: 0 !important;
+    margin: 10px auto !important;
+}
+
+.ul-card {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: square;
+        list-style-position: inside;
+        padding: 3px;
+        text-align: left;
+        &.alter {
+            background-color: #ddd;
+            color: black;
+        }
+    }
+}
+
+.boton-card {
+    margin-top: 20px;
+    color: #fff;
+    background-color: #111;
+    border: 1px solid transparent;
+    transition: .3s ease-in-out;
+
+    &:hover {
+        color: #111;
+        background-color: #fff;
+        border: 1px solid #111;
+    }
+}
+

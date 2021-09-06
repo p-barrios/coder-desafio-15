@@ -1,0 +1,8 @@
+// Mixins
+
+@mixin prefijos($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}

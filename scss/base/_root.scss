@@ -1,0 +1,12 @@
+/* :root file */
+
+// Maps variables
+$base: (
+    b-radius: 5px,
+    principal-font: 'Roboto' sans-serif
+);
+
+
+* {
+    font-family: map-get($base, principal-font);
+}

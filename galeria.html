@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Este sitio es un desafio de CoderHouse, de la carrera de Desarrollo Web Fullstack con el profesor Nicolas Seguro y bajo la tutoría de Juan Pablo Vitale">
+    <meta name="keywords" content="coderhouse, desarrollo web, html, css, javascript, sass, git, github, diseño, desarrollo, diseño ux/ui">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>Desafio 13 - Este sitio es un desafio de CoderHouse | Galería</title>
+
+    <meta property="og:title" content="Desafio 13 - Este sitio es un desafio de CoderHouse | Galería">
+    <meta property="og:image" content="http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4OAgf?ver=6a31"> <!-- Reemplazar luego de subirla -->
+    <meta property="og:image:alt" content="Imagen de microsoft para el protocolo Open Graph" />
+    <meta property="og:description" content="Explora los productos y servicios de Microsoft para el hogar o la empresa. Compra Microsoft 365, Xbox, Windows, Azure y mucho m&#225;s. Encuentra descargas y soporte t&#233;cnico.">
+    <meta property="og:author" content="Pablo Barrios">
+    <meta property="og:site_name" content="Desafio 13 de CoderHouse">
+    <meta property="og:url" content="#" /> <!-- Remplazar por la ruta del sitio cuando se suba -->
+    <meta property="og:type" content="website" />
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://debenezer.com.ar/cdn-personales/lightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light m-auto w-100">
+            <div class="container-fluid ">
+                <!-- Se muestra solamente cuando se habilita el menu mobile -->
+                <a class="navbar-brand d-lg-none" href="index.html">
+                    <img src="https://i.ibb.co/3zbTh8r/logo.png" alt="Logo de microsoft" height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-between" id="navbarSupportedContent">
+                    <!-- Este logo se muestra solamente cuando se habilita el menu de escritorio -->
+                    <ul class="navbar-nav ml-auto d-none d-lg-flex">
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="https://i.ibb.co/3zbTh8r/logo.png" alt="Logo de microsoft" height="24">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tienda</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="trabajos.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Trabajos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="trabajos.html#trabajo-seccion-1">Seccion 1</a></li>
+                                <li><a class="dropdown-item" href="trabajos.html#trabajo-seccion-2">Seccion 2</a></li>
+                                <li><a class="dropdown-item" href="trabajos.html#trabajo-seccion-3">Seccion 3</a></li>
+                                <li><a class="dropdown-item" href="trabajos.html#trabajo-seccion-4">Seccion 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <hr class="normalizado  mb-5">
+
+
+    <!-- Sección de galería -->
+    <main>
+        <h1>Galería de imágenes</h1>
+        <section class="grid-container">
+            <a href="https://i.ibb.co/89srKtX/img-1.jpg" data-lightbox="galeria" class="grid-item1"><img src="https://i.ibb.co/89srKtX/img-1.jpg" alt="teclado de surface" ></a>
+            <a href="https://i.ibb.co/QYs8scJ/img-2.jpg" data-lightbox="galeria" class="grid-item2"><img src="https://i.ibb.co/QYs8scJ/img-2.jpg" alt="oficinas de microsoft"></a>
+            <a href="https://i.ibb.co/P4PrHk6/img-3.jpg" data-lightbox="galeria" class="grid-item3"><img src="https://i.ibb.co/P4PrHk6/img-3.jpg" alt="exposición de gráficos"></a>
+            <a href="https://i.ibb.co/NWJyQMM/img-4.jpg" data-lightbox="galeria" class="grid-item4"><img src="https://i.ibb.co/NWJyQMM/img-4.jpg" alt="muestra de pantalla con teams"></a>
+            <a href="https://i.ibb.co/N7Gq1h7/img-5.jpg" data-lightbox="galeria" class="grid-item5"><img src="https://i.ibb.co/N7Gq1h7/img-5.jpg" alt="laptop surface pro exterior"></a>
+            <a href="https://i.ibb.co/JHY7w6S/img-6.jpg" data-lightbox="galeria" class="grid-item6"><img src="https://i.ibb.co/JHY7w6S/img-6.jpg" alt="laptop surface pro interior"></a>
+            <a href="https://i.ibb.co/80zCPPP/img-7.jpg" data-lightbox="galeria" class="grid-item7"><img src="https://i.ibb.co/80zCPPP/img-7.jpg" alt="presentacion en teams"></a>
+            <a href="https://i.ibb.co/qFzVckR/img-8.jpg" data-lightbox="galeria" class="grid-item8"><img src="https://i.ibb.co/qFzVckR/img-8.jpg" alt="tablet surface negra"></a>
+            <a href="https://i.ibb.co/JmKS0D5/img-9.jpg" data-lightbox="galeria" class="grid-item9"><img src="https://i.ibb.co/JmKS0D5/img-9.jpg" alt="tablet surface roja"></a>
+            <a href="https://i.ibb.co/k8WVzWR/img-10.jpg" data-lightbox="galeria" class="grid-item10"><img src="https://i.ibb.co/k8WVzWR/img-10.jpg" alt="laptop surface cerrada y mouse"></a>
+            <a href="https://i.ibb.co/wyL12fQ/img-11.jpg" data-lightbox="galeria" class="grid-item11"><img src="https://i.ibb.co/wyL12fQ/img-11.jpg" alt="laptop surface en escritorio"></a>
+            <a href="https://i.ibb.co/xhw5D5w/img-12.jpg" data-lightbox="galeria" class="grid-item12"><img src="https://i.ibb.co/xhw5D5w/img-12.jpg" alt="laptop surface abierta y mouse"></a>
+        </section>
+    </main>
+
+    <hr class="normalizado">
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="redes-sociales">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="copy">
+            <p>2021 &copy; Pablo Barrios.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://debenezer.com.ar/cdn-personales/lightbox-plus-jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

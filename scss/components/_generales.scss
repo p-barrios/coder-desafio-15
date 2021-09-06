@@ -1,0 +1,60 @@
+/* Generales */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: map-get($base, principal-font);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2, h1 {
+    font-size: 30px;
+    color: rgb(19, 87, 70);
+    text-align: center;
+    text-shadow: black;
+    font-style: italic;
+}
+
+button {
+    border:none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+/* Clases en camelCase para cumplir el desafío */
+.tituloAzul {
+    text-align: center;
+    font-size: 25px;
+    color: #222;
+    font-weight: 600;
+}
+
+.tituloVerde {
+    color:darkgreen;
+}
+
+.parrafoTomato {
+    color: tomato;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.normalizado {
+    padding: 0;
+    margin: 0;
+}
+
+.enfasis {
+    text-transform: uppercase;
+    font-weight: bold;
+}

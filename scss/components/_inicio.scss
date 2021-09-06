@@ -1,0 +1,41 @@
+/* Inicio */
+
+#inicio {
+    height: 100vh;
+    text-align: center;
+    background-image:  linear-gradient(to top, rgba(134, 165, 217, 0.7), rgba(71, 73, 84, 0.5)), url('https://i.ibb.co/ZTXpZpW/bg1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.2);
+        @include prefijos(box-shadow, 0px 0px 7px rgba(0, 0, 0, 0.7));
+        border-radius: map-get($base, b-radius);
+        border: 1px solid transparent;
+        padding: 10px 100px;   
+        transition: .3s ease-in-out;
+        &:hover {
+            color: white;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+
+
+}

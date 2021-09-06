@@ -1,0 +1,72 @@
+/* MediaQueries */
+
+@media only screen and (max-width:1050px){
+
+    header {
+        flex-direction: column;
+        h1 {
+            margin-bottom: 20px;
+            img {
+                padding-left: 0;
+            }
+        }
+    }
+    .menu {
+        padding-left: 0;
+    }
+    #nosotros {
+        .producto.mobile-reverse {
+            flex-direction: column-reverse;
+        }
+        img {
+            width: 100%;
+        }
+        p {
+            width: 100%;
+        }   
+        article{
+            &.card {
+                width: 60%;
+                margin: 15px;
+            }
+        }
+    
+    }    
+}
+
+
+@media only screen and (max-width: 650px){
+    nav {
+        width: 90%;
+    }
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        li {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            &:active {
+                background-color: #ddd;
+            }
+        }
+    }
+    #nosotros {
+        margin: 50px 5px;
+    }
+    #servicios {
+        .card-container {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        article {
+            &.card {
+                width: 80%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
